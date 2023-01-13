@@ -1,0 +1,31 @@
+Component:
+    Components are independent and reusable bits of code.
+
+Simple component:
+
+React components implement a render() method that takes input data and returns what to display.
+Input data that is passed into the component can be accessed by render() via this.props
+
+Stateful component
+
+-> In addition to taking input data , a component can maintain internal state data . 
+-> When a component’s state data changes, the rendered markup will be updated by re-invoking render().
+
+
+Functional component:
+
+->A functional component is just a plain JavaScript function that returns JSX.
+->Because a functional component is just a plain JavaScript function, you cannot use setState() in your component. 
+  That’s the reason why they also get called functional stateless components.
+
+
+Class component:
+
+ -> A class component is a JavaScript class that extends React.Component.
+ -> It must have the render() method returning JSX .
+ -> Also known as Stateful components.
+ -> React lifecycle methods can be used inside class components.
+ -> These components are simple classes that are made up of multiple functions .
+ -> Constructor are used as it needs to store state.
+
+ ->The class component doesn’t have to explicitly pass props as an argument, it already has access to it.  

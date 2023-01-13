@@ -1,0 +1,73 @@
+DOM
+
+->The DOM in simple words represents the UI of your application. 
+->The DOM is represented as a tree data structure.
+->Everytime there is a change in the state of your application UI, the DOM gets updated to represent that change. 
+
+->But when the changes are made, the updated element and it’s children have to be re-rendered to update the application UI.
+->The re-rendering  of the UI is what makes it slow. 
+
+Virtual DOM
+
+->The virtual DOM (VDOM) is a programming concept where an ideal, or “virtual”,
+representation of a UI is kept in memory and synced with the “real” DOM by a library such as ReactDOM. 
+
+->In React every UI piece is a component, and each component has a state.
+ React follows the observable pattern and listens for state changes.
+ When the state of a component changes, React updates the virtual DOM tree. 
+ Once the virtual DOM has been updated, React then compares the current version of the
+  virtual DOM with the previous version of the virtual DOM.
+
+->This approach enables the declarative API of React: 
+    You tell React what state you want the UI to be in, and it makes sure the DOM matches that state. 
+
+-> Once React knows which virtual DOM objects have changed, then React updates only those objects, in the real DOM. 
+
+Batch Updating
+
+-> React follows a batch update mechanism to update the real DOM. Hence, leading to increased performance. 
+This means that updates to the real DOM are sent in batches, instead of sending updates for every single change in state.
+
+
+
+Atomic Design
+----------------
+
+Atomic design : creating a system of pieces that can come together to create elements and Templates we can reusable
+                over and over again.
+
+Atomic design is a methodology composed of five distinct stages working together to create interface design systems
+ in a more deliberate and hierarchical manner. The five stages of atomic design are:
+
+1.Atoms
+
+2.Molecules
+
+3.Organisms
+
+->Functional entities. 
+->holding business logic and solutions. 
+-> Event handlers
+-> managing state
+-> Ex: signIn page
+
+4.Templates
+
+->Entities Driving layout
+
+5.Pages
+
+-> Content in form of a template
+->handles routing 
+->network calls
+-> ex: wikipedia page
+
+
+Advantagesof atomic design:
+
+->More reusable components  
+->Easy to accommodate new changes in the interface
+->Logic segregation from ui elements. 
+->Consistent UI
+
+
